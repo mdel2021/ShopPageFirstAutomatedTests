@@ -1,0 +1,56 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-4AO1319",
+    "children" : [ {
+      "name" : "15096@DESKTOP-4AO1319.TestNG-tests-2(19)",
+      "children" : [ {
+        "name" : "asUserTryToLoginWithCorrectLoginAndPassword",
+        "uid" : "572182cf650fbfab",
+        "parentUid" : "bef8ca3cfae37307acc8f5caca2e9e95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1682541801064,
+          "stop" : 1682541803638,
+          "duration" : 2574
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "CHROME" ]
+      } ],
+      "uid" : "bef8ca3cfae37307acc8f5caca2e9e95"
+    }, {
+      "name" : "15096@DESKTOP-4AO1319.TestNG-tests-1(18)",
+      "children" : [ {
+        "name" : "afterTest",
+        "uid" : "2ac58d9ecc9d2a47",
+        "parentUid" : "1bc88265b8b1bcff2afc933d73eff056",
+        "status" : "broken",
+        "time" : {
+          "start" : 1682541806493,
+          "stop" : 1682541806495,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "FIREFOX" ]
+      }, {
+        "name" : "asUserTryToLoginWithIncorrectLoginAndPassword",
+        "uid" : "93ca7d9c6b03f5d1",
+        "parentUid" : "1bc88265b8b1bcff2afc933d73eff056",
+        "status" : "passed",
+        "time" : {
+          "start" : 1682541797116,
+          "stop" : 1682541801198,
+          "duration" : 4082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "FIREFOX" ]
+      } ],
+      "uid" : "1bc88265b8b1bcff2afc933d73eff056"
+    } ],
+    "uid" : "f24972a936ebb6e7f6de7ae169485ac8"
+  } ]
+}

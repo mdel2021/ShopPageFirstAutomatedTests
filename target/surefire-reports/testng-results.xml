@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-26T22:42:59 CEST" name="All Pet Store Tests" finished-at="2023-04-26T22:43:27 CEST" duration-ms="28070">
+    <groups>
+    </groups>
+    <test started-at="2023-04-26T22:42:59 CEST" name="Negative Login Tests" finished-at="2023-04-26T22:43:26 CEST" duration-ms="26812">
+      <class name="tests.FailedLoginTests">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.FailedLoginTests@7cac93fe]" started-at="2023-04-26T22:42:59 CEST" name="beforeClass" finished-at="2023-04-26T22:42:59 CEST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeTest(driver.BrowserType)[pri:0, instance:tests.FailedLoginTests@7cac93fe]" started-at="2023-04-26T22:42:59 CEST" name="beforeTest" finished-at="2023-04-26T22:43:16 CEST" duration-ms="16729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="asUserTryToLoginWithIncorrectLoginAndPassword()[pri:0, instance:tests.FailedLoginTests@7cac93fe]" started-at="2023-04-26T22:43:16 CEST" name="asUserTryToLoginWithIncorrectLoginAndPassword" finished-at="2023-04-26T22:43:21 CEST" duration-ms="4211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asUserTryToLoginWithIncorrectLoginAndPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.FailedLoginTests@7cac93fe]" started-at="2023-04-26T22:43:21 CEST" name="afterTest" finished-at="2023-04-26T22:43:26 CEST" duration-ms="5186" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [12be9585-8288-4db6-9bcc-411f3d01484b, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:29959, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8164, moz:profile: C:\Users\mdela\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29959/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12be9585-8288-4db6-9bcc-411f3d01484b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [12be9585-8288-4db6-9bcc-411f3d01484b, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:29959, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8164, moz:profile: C:\Users\mdela\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29959/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12be9585-8288-4db6-9bcc-411f3d01484b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.FailedLoginTests -->
+    </test> <!-- Negative Login Tests -->
+    <test started-at="2023-04-26T22:42:59 CEST" name="Positive Login Tests" finished-at="2023-04-26T22:43:27 CEST" duration-ms="28070">
+      <class name="tests.CorrectLoginTests">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.CorrectLoginTests@4130955c]" started-at="2023-04-26T22:42:59 CEST" name="beforeClass" finished-at="2023-04-26T22:42:59 CEST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeTest(driver.BrowserType)[pri:0, instance:tests.CorrectLoginTests@4130955c]" started-at="2023-04-26T22:42:59 CEST" name="beforeTest" finished-at="2023-04-26T22:43:21 CEST" duration-ms="21159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="asUserTryToLoginWithCorrectLoginAndPassword()[pri:0, instance:tests.CorrectLoginTests@4130955c]" started-at="2023-04-26T22:43:21 CEST" name="asUserTryToLoginWithCorrectLoginAndPassword" finished-at="2023-04-26T22:43:23 CEST" duration-ms="2583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asUserTryToLoginWithCorrectLoginAndPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.CorrectLoginTests@4130955c]" started-at="2023-04-26T22:43:23 CEST" name="afterTest" finished-at="2023-04-26T22:43:27 CEST" duration-ms="4121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.CorrectLoginTests -->
+    </test> <!-- Positive Login Tests -->
+  </suite> <!-- All Pet Store Tests -->
+</testng-results>

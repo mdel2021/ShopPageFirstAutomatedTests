@@ -1,0 +1,60 @@
+{
+  "72bc3a7a0db9f926c8ef0209c2078dc9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ac58d9ecc9d2a47",
+      "status" : "broken",
+      "statusDetails" : "Tried to run command without establishing a connection\nBuild info: version: '4.8.1', revision: '8ebccac989'\nSystem info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [12be9585-8288-4db6-9bcc-411f3d01484b, quit {}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:29959, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8164, moz:profile: C:\\Users\\mdela\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29959/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 12be9585-8288-4db6-9bcc-411f3d01484b",
+      "time" : {
+        "start" : 1682541806493,
+        "stop" : 1682541806495,
+        "duration" : 2
+      }
+    } ]
+  },
+  "a5cfca9ca1ed4b7f78c33b841f88dbbb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "572182cf650fbfab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682541801064,
+        "stop" : 1682541803638,
+        "duration" : 2574
+      }
+    } ]
+  },
+  "9ec0e4995e785d010d983ccae0b874d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93ca7d9c6b03f5d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1682541797116,
+        "stop" : 1682541801198,
+        "duration" : 4082
+      }
+    } ]
+  }
+}
