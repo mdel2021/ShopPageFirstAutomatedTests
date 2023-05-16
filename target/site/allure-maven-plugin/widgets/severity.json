@@ -1,0 +1,31 @@
+[ {
+  "uid" : "cc1006f34ffbd289",
+  "name" : "afterTest",
+  "time" : {
+    "start" : 1684874975616,
+    "stop" : 1684874975617,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "436ef95eb01eed83",
+  "name" : "asUserTryToLoginWithIncorrectLoginAndPassword",
+  "time" : {
+    "start" : 1684874975683,
+    "stop" : 1684874975764,
+    "duration" : 81
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "314d2a5ed12e837e",
+  "name" : "asUserTryToLoginWithCorrectLoginAndPassword",
+  "time" : {
+    "start" : 1684874967714,
+    "stop" : 1684874974214,
+    "duration" : 6500
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

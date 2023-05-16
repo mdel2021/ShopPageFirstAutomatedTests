@@ -1,0 +1,64 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "All Pet Store Tests",
+    "children" : [ {
+      "name" : "Positive Login Tests",
+      "children" : [ {
+        "name" : "tests.CorrectLoginTests",
+        "children" : [ {
+          "name" : "asUserTryToLoginWithCorrectLoginAndPassword",
+          "uid" : "314d2a5ed12e837e",
+          "parentUid" : "a25067eec059e67fd8905ab8c5301925",
+          "status" : "passed",
+          "time" : {
+            "start" : 1684874967714,
+            "stop" : 1684874974214,
+            "duration" : 6500
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "CHROME" ]
+        } ],
+        "uid" : "a25067eec059e67fd8905ab8c5301925"
+      } ],
+      "uid" : "3f7b28050a2eddd01a0448d1e9e1b201"
+    }, {
+      "name" : "Negative Login Tests",
+      "children" : [ {
+        "name" : "tests.FailedLoginTests",
+        "children" : [ {
+          "name" : "afterTest",
+          "uid" : "cc1006f34ffbd289",
+          "parentUid" : "245547c94331bc0d291e262939e958c0",
+          "status" : "broken",
+          "time" : {
+            "start" : 1684874975616,
+            "stop" : 1684874975617,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "FIREFOX" ]
+        }, {
+          "name" : "asUserTryToLoginWithIncorrectLoginAndPassword",
+          "uid" : "436ef95eb01eed83",
+          "parentUid" : "245547c94331bc0d291e262939e958c0",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1684874975683,
+            "stop" : 1684874975764,
+            "duration" : 81
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "FIREFOX" ]
+        } ],
+        "uid" : "245547c94331bc0d291e262939e958c0"
+      } ],
+      "uid" : "c55ec735e4aeb2c7b6180756da6692f6"
+    } ],
+    "uid" : "20dcff51a2ecd4af73f197737658a290"
+  } ]
+}
