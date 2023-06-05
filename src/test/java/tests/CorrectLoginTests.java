@@ -17,6 +17,7 @@ public class CorrectLoginTests extends TestBase{
     @Description("The goal of this test is to log with correct username and password" +
             "and check if Dog Banner is displayed after")
     public void asUserTryToLoginWithCorrectLoginAndPassword() {
+
         DriverUtils.navigateToPage(LOGIN_URL);
 
         LoginPage loginPage = new LoginPage();
