@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
+import java.util.Set;
+
 import static org.testng.Assert.assertEquals;
 
 public class TableTest extends TestBaseForTable {
@@ -63,6 +66,10 @@ public class TableTest extends TestBaseForTable {
 
         assertEquals(webSiteFirstRow.getText(), "http://www.jsmith.com");
         assertEquals(webSiteLastRow.getText(), "http://www.timconway.com");
+
+        //wyświetlenie typów logów
+        Set<String> availableLogTypes = driver.manage().logs().getAvailableLogTypes();
+        System.out.println(Arrays.toString(availableLogTypes.toArray()));
     }
 
 
