@@ -5,15 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.Date;
 import java.util.logging.Level;
 
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.*;
 
 public class LogExampleTests {
     private WebDriver driver;
@@ -48,6 +51,13 @@ public class LogExampleTests {
         loginButton.click();
         WebElement wrongLoginMessageLabel = driver.findElement(By.cssSelector("#Content ul[class='messages'] li"));
         assertEquals("Invalid username or password. Signon failed.", wrongLoginMessageLabel.getText());
+
+        LogEntries browserLogs = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry browserLog : browserLogs) {
+            System.out.println(new Date(browserLog.getTimestamp()) + " " + browserLog.getLevel() + " " + browserLog.getMessage());
+            assertNotEquals(Level.SEVERE, browserLog.getLevel());
+        }
+        System.out.println("===========");
 
 
     }
