@@ -16,7 +16,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class WebElementsListingTest {
-    private static final String LOGIN_URL = "http://przyklady.javastart.pl/jpetstore/";
+    private static final String LOGIN_URL = "http://przyklady.javastart.pl/jpetstore/actions/Catalog.action";
     private WebDriver driver;
 
     @BeforeMethod
