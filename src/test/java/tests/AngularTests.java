@@ -1,7 +1,10 @@
 package tests;
 
 import navigation.Angular1Wait;
+<<<<<<< HEAD
 import navigation.Angular2Wait;
+=======
+>>>>>>> origin/develop
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,6 +32,7 @@ public class AngularTests {
         wait.until(Angular1Wait.waitForAngularToFinishProcessingRequests());
     }
 
+<<<<<<< HEAD
     @Test
     public void angular2WaitTest() {
         driver.navigate().to("https://demos.creative-tim.com/paper-dashboard-angular/#/dashboard");
@@ -36,6 +40,8 @@ public class AngularTests {
         wait.until(Angular2Wait.waitForAngularIOToFinishProcessingRequests());
     }
 
+=======
+>>>>>>> origin/develop
     @AfterMethod
     public void afterTest() {
         driver.close();
